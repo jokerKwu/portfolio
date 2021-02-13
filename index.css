@@ -47,15 +47,10 @@ body, html{
 .text-center{
     text-align:center!important;
 }
-.list-inline{
-    padding-left:30px;
-    list-style:none;
-    display:flex;
-    justify-content:center;
-}
+
 .list-inline-item{
     display:inline-block;
-    padding-left:10px;
+    padding-left:20px;
     padding-top:40px;
 }
 section{
@@ -79,8 +74,8 @@ div{
 p{
    font: inherit;
    vertical-align: baseline;
-
 }
+
 /**
 --------------------------------------------------------------------------------------
     nav style
@@ -105,6 +100,9 @@ p{
     height: 2px;
     background: #333;
     transition: all .3s ease-in-out;
+  }
+  .navTitle{
+      padding-left: 300px;
   }
 
 /**
