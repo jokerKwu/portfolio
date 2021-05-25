@@ -1,378 +1,337 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>쭈니 AboutMe</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <link rel="stylesheet" href="index.css" type="text/css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <title>쭈니 포트폴리오</title>
 </head>
 
-<body onload="init()">
-    <header>
-        <nav class="navbar">
-            <div class="mainNav">
-                <h2><a href="#juny"> 쭈 니</a></h2>
-                <h1 class="navTitle"><strong>Hello, Juny World</strong></h1>
-                <ul class="list-inline mb-5">
-                    <li class="list-inline-item"><a href="#aboutMe">ABOUT ME</a></li>
-                    <li class="list-inline-item"><a href="#portfolio">PORTFOLIO</a></li>
-                    <li class="list-inline-item"><a href="#contact">CONTACT</a></li>
-                </ul>
-                <div class="nav-underline"></div>
-            </div>
+<body>
+    <header class="section current" id="home">
+        <nav id="nav-wrap" class style="display:block;">
+            <ul id="nav" class="nav">
+                <li class><a class="smoothscroll" href="#home">H O M E</a></li>
+                <li class><a class="smoothscroll" href="#aboutMe">A B O U T</a></li>
+                <li class><a class="smoothscroll" href="#skills">S K I L L S</a></li>
+                <li class><a class="smoothscroll" href="#portfolio">P O R T F O L I O</a></li>
+                <li class><a class="smoothscroll" href="#contact">C O N T A C T</a></li>
+            </ul>
         </nav>
-    </header>
-    <main>
-        <section class="page-section" id="juny">
-            <div class="mainText">
-                <div class="slide">
-                    <ul class="textSlide">
-                        <li class="slide-txt" style="display: none;">함께 소통하</li>
-                        <li class="slide-txt" style="display: none;">항상 성장하</li>
-                        <li class="slide-txt" style="display: none;">트렌드를 읽</li>
-                        <li class="slide-txt" style="display: none;">책임감이 있</li>
-                    </ul>
-                    <p>
-
-                        <strong>는 개발자</strong>&nbsp;&nbsp;&nbsp;
-                        <br>
-
-                        <strong>안녕하세요 조현준입니다.</strong>
-
-                    </p>
+        <div class="row banner">
+            <div class="banner-text">
+                <div class="banner-text">
+                    <h1 style="font-family: IBMPlexSansKR-Medium; font-size: 65.6px;">백엔드 개발자
+                        조현준입니다.
+                    </h1>
+                    <h3 style="color: rgb(255, 255, 255); font-family: IBMPlexSansKR-Regular;">
+                        저는 자바를 주로 사용하는 백엔드 개발자입니다. 최근에는 웹 서비스에 관심을 많이 가지고 있습니다. 헬스, 족구 등 뛰어 노는 것을 좋아합니다.
+                    </h3>
                 </div>
             </div>
-        </section>
-        <section class="page-section" id="aboutMe">
-            <div class="container">
-                <div class="who">
-                    <h1>Who.</h1>
-                    <div class="me">
-                        <div class="meImg">
-                            <img src="img/조현준4_260.jpg">
-                        </div>
-                        <div class="meText">
-                            <div class="meTextImg">
-                                <img src="img/aboutMe.jpg" alt="Web/App 개발자"> 
-                            </div>
-                            <p>
-                                <br>
-                                안녕하세요! 재미있게 개발하고 있는 개발자 조현준입니다.
-                                <br>
-                                끊임없이 성장하려고 노력 중이며, 다양한 시도를 해보고 있습니다.
-                                <br>
-                                항상 사용자 입장에서 생각하며 개발하고 있으며, 
-                                <br>
-                                트렌드에 뒤처지지 않기 위해서 노력 중입니다.                                
-                                <br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills">
-                    <h1> Skills.</h1>
-                    <h4>Language</h4>
-                    <ul>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/c.png">
-                                <p>C</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/c++.png">
-                                <p>C++</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/cc.png">
-                                <p>C#</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/java.png">
-                                <p>JAVA</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/python.png">
-                                <p>PYTHON</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/opencv.png">
-                                <p>OPENCV</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/opengl.png">
-                                <p>OPENGL</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <h4>Front-end</h4>
-                    <ul>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/html-5.png">
-                                <p>HTML</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/javascript.png">
-                                <p>JAVASCRIPT</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/jsp.png">
-                                <p>JSP</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/jquery.png">
-                                <p>Jquery</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <h4>Back-end</h4>
-                    <ul>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/flask.png">
-                                <p>Flask</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/spring boot.png">
-                                <p>Spring Framework</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/hadoop.png">
-                                <p>Hadoop</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/tensorflow.png">
-                                <p>Temsorflow</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/oracle.png">
-                                <p>Oracle</p>
-                            </div>
-                        </li>
-
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/mysql.png">
-                                <p>Mysql</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/mongo.png">
-                                <p>MongoDB</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/nodejs.png">
-                                <p>Nodejs</p>
-                            </div>
-                        </li>
-                        <li class="list-inline-skills">
-                            <div class="div-skill">
-                                <img src="img/aws.png">
-                                <p>AWS</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="page-section" id="portfolio">
-            <h1> portfolio.</h1>
-            <div class="container">
-                <div class="row no-gutters">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" id="chatBot" href="#portfolio">
-                            <span class="caption">
-                                <span class="caption-content">
-                                    <h2>ONE</h2>
-                                    <h5 class="mb-0">
-                                        챗봇 프로젝트
-                                    </h5>
-                                </span>
-                            </span>
-                            <img class="img-fluid" src="img/새마을금고챗봇.jpg" alt>
-                        </a>
-                    </div>
-                    <!-- 프로젝트 모달창 -->
-                    <div class="modalContainer hidden">
-                        <div class="modal_wrap">
-                            <div class="modal_body">
-                                <div class="modal_content">
-                                    <button>X</button>
-                                    <img src="img/조현준3.jpg" />
-                                    <div class="weblink">
-                                        <p>
-                                            블라블라 챗봇 설명
-                                        </p>
-                                        <a href="https://gentle-ravine-24356.herokuapp.com/" target="_blank">사이트
-                                            바로가기</a>
-                                        <p>깃허브에서 코드를 확인하실 수 있습니다.</p>
-                                        <a href="https://github.com/jokerKwu/KFCC_Chatbot" target="_blank">깃허브 바로가기</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal_overlay chatBot_modal_overlay"></div>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#portfolio" id="faceRecognition">
-                            <span class="caption">
-                                <span class="caption-content">
-                                    <h2>TWO</h2>
-                                    <h5 class="mb-0">
-                                        얼굴인식 프로젝트
-                                    </h5>
-                                </span>
-                            </span>
-                            <img class="img-fluid" src="img/얼굴인식.jpg" alt>
-                        </a>
-                    </div>
-                    
-                    <!-- 프로젝트 모달창 -->
-                    <div class="modalContainer hidden">
-                        <div class="modal_wrap">
-                            <div class="modal_body">
-                                <div class="modal_content">
-                                    <button>X</button>
-                                    <img src="img/조현준3.jpg" />
-                                    <div class="weblink">
-                                        <p>
-                                            블라블라 얼굴 인식 설명
-                                        </p>
-                                        <a href="https://gentle-ravine-24356.herokuapp.com/" target="_blank">사이트
-                                            바로가기</a>
-                                        <p>깃허브에서 코드를 확인하실 수 있습니다.</p>
-                                        <a href="https://github.com/jokerKwu/KFCC_Chatbot" target="_blank">깃허브 바로가기</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal_overlay"></div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#portfolio" id="sicuanCastle">
-                            <span class="caption">
-                                <span class="caption-content">
-                                    <h2>THREE</h2>
-                                    <h5 class="mb-0">
-                                        사천성 프로젝트
-                                    </h5>
-                                </span>
-                            </span>
-                            <img class="img-fluid" src="img/사천성.jpg" alt>
-                        </a>
-                    </div>
-                    
-                    <!-- 프로젝트 모달창 -->
-                    <div class="modalContainer hidden">
-                        <div class="modal_wrap">
-                            <div class="modal_body">
-                                <div class="modal_content">
-                                    <button>X</button>
-                                    <img src="img/조현준3.jpg" />
-                                    <div class="weblink">
-                                        <p>
-                                            블라블라 사천성 설명
-                                        </p>
-                                        <a href="https://gentle-ravine-24356.herokuapp.com/" target="_blank">사이트
-                                            바로가기</a>
-                                        <p>깃허브에서 코드를 확인하실 수 있습니다.</p>
-                                        <a href="https://github.com/jokerKwu/KFCC_Chatbot" target="_blank">깃허브 바로가기</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal_overlay"></div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#portfolio" id="webBoard">
-                            <span class="caption">
-                                <span class="caption-content">
-                                    <h2>FOUR</h2>
-                                    <h5 class="mb-0">
-                                        게시판 프로젝트
-                                    </h5>
-                                </span>
-                            </span>
-                            <img class="img-fluid" src="img/웹게시판.JPG"  alt>
-                        </a>
-                    </div>
-                    
-                    <!-- 프로젝트 모달창 -->
-                    <div class="modalContainer hidden">
-                        <div class="modal_wrap">
-                            <div class="modal_body">
-                                <div class="modal_content">
-                                    <button>X</button>
-                                    <img src="img/조현준3.jpg" />
-                                    <div class="weblink">
-                                        <p>
-                                            블라블라 게시판 설명
-                                        </p>
-                                        <a href="https://gentle-ravine-24356.herokuapp.com/" target="_blank">사이트
-                                            바로가기</a>
-                                        <p>깃허브에서 코드를 확인하실 수 있습니다.</p>
-                                        <a href="https://github.com/jokerKwu/KFCC_Chatbot" target="_blank">깃허브 바로가기</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal_overlay"></div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <div class="container text-center">
-            <h1> "잘 부탁드립니다!"</h1>
-            <h4> - 'WECODE' APP 1기 조현준 - </h4>
         </div>
-    </main>
+    </header>
+    <section class="section" id="aboutMe">
+        <div class="container">
+            <div class="who">
+                <h1>Who.</h1>
+                <div class="me">
+                    <div class="meImg">
+                        <img src="img/조현준4_260.jpg">
+                    </div>
+                    <div class="meText">
+                        <div class="meTextImg">
+                            <img src="img/aboutMe.jpg" alt="Web/App 개발자">
+                        </div>
+                        <pre>
+                            안녕하세요. 즐겁게 개발하고 있는 개발자 <strong>조현준</strong>입니다.
+                            저는 문제를 집요하게 해결할려는 자세를 가지고 있습니다.
+                            또한, 주변 사람들을 소중히 생각하며,
+                            혼자 성장하는 것이 아니라 팀원들과 같이 성장하고자 합니다.
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="who">
+                <h1>Carrer.</h1>
 
-    <footer class="footer" id="contact">
+                <div class="me">
+                    <div class="meText">
+                        <pre> 
+                                    - 2019.09 ~ 2021.05 IT 솔루션 인젠트 회사 근무 
+
+                                    - 2014.06 ~ 2016.08 아모레퍼시픽 자회사 물류회사 근무
+
+                                    - 2012.12 ~ 2014.12 공군 병장 만기 제대
+                                    
+                                    - 2012 ~ 2020 광운대학교 컴퓨터소프트웨학과 졸업
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <div class="skills">
+            <h1> Skills.</h1>
+            <h4>Language</h4>
+            <ul>
+
+                <li class="list-inline-skills">
+                    <div class="div-skill">
+                        <img src="img/c++.png">
+                        <p>C++</p>
+                    </div>
+                </li>
+                <li class="list-inline-skills">
+                    <div class="div-skill">
+                        <img src="img/java.png">
+                        <p>JAVA</p>
+                    </div>
+                </li>
+                <li class="list-inline-skills">
+                    <div class="div-skill">
+                        <img src="img/python.png">
+                        <p>PYTHON</p>
+                    </div>
+                </li>
+            </ul>
+            <h4>Front-end</h4>
+            <ul>
+                <li class="list-inline-skills">
+                    <div class="div-skill">
+                        <img src="img/html-5.png">
+                        <p>HTML</p>
+                    </div>
+                </li>
+                <li class="list-inline-skills">
+                    <div class="div-skill">
+                        <img src="img/javascript.png">
+                        <p>JAVASCRIPT</p>
+                    </div>
+                </li>
+                <li class="list-inline-skills">
+                    <div class="div-skill">
+                        <img src="img/jsp.png">
+                        <p>JSP</p>
+                    </div>
+                </li>
+                <li class="list-inline-skills">
+                    <div class="div-skill">
+                        <img src="img/jquery.png">
+                        <p>Jquery</p>
+                    </div>
+                </li>
+            </ul>
+            <h4>Back-end</h4>
+            <ul>
+                <li class="list-inline-skills">
+                    <div class="div-skill">
+                        <img src="img/flask.png">
+                        <p>Flask</p>
+                    </div>
+                </li>
+                <li class="list-inline-skills">
+                    <div class="div-skill">
+                        <img src="img/spring boot.png">
+                        <p>Spring Framework</p>
+                    </div>
+                </li>
+
+                <li class="list-inline-skills">
+                    <div class="div-skill">
+                        <img src="img/oracle.png">
+                        <p>Oracle</p>
+                    </div>
+                </li>
+
+                <li class="list-inline-skills">
+                    <div class="div-skill">
+                        <img src="img/mysql.png">
+                        <p>Mysql</p>
+                    </div>
+                </li>
+                <li class="list-inline-skills">
+                    <div class="div-skill">
+                        <img src="img/aws.png">
+                        <p>AWS</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </section>
+    <section class="section" id="portfolio">
+        <h1> portfolio.</h1>
+        <div class="container">
+            <div class="portfolio-row no-gutters">
+                <div class="col-lg-6">
+                    <a class="portfolio-item" id="chatBot" href="#portfolio">
+                        <span class="caption">
+                            <span class="caption-content">
+                                <h2>ONE</h2>
+                                <h5 class="mb-0">
+                                    챗봇 프로젝트
+                                </h5>
+                            </span>
+                        </span>
+                        <img class="img-fluid" src="img/새마을금고챗봇.jpg" alt>
+                    </a>
+                </div>
+                <!-- 프로젝트 모달창 -->
+                <div class="modalContainer hidden">
+                    <div class="modal_wrap">
+                        <div class="modal_body">
+                            <div class="modal_content">
+                                <button>X</button>
+                                <img src="img/조현준3.jpg" />
+                                <div class="weblink">
+                                    <p>
+                                        블라블라 챗봇 설명
+                                    </p>
+                                    <a href="https://gentle-ravine-24356.herokuapp.com/" target="_blank">
+                                        사이트 바로가기</a>
+
+                                        
+                                    <p>깃허브에서 코드를 확인하실 수 있습니다.</p>
+                                    <a href="https://github.com/jokerKwu/KFCC_Chatbot" target="_blank">깃허브 바로가기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_overlay chatBot_modal_overlay"></div>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#portfolio" id="faceRecognition">
+                        <span class="caption">
+                            <span class="caption-content">
+                                <h2>TWO</h2>
+                                <h5 class="mb-0">
+                                    얼굴인식 프로젝트
+                                </h5>
+                            </span>
+                        </span>
+                        <img class="img-fluid" src="img/얼굴인식.jpg" alt>
+                    </a>
+                </div>
+
+                <!-- 프로젝트 모달창 -->
+                <div class="modalContainer hidden">
+                    <div class="modal_wrap">
+                        <div class="modal_body">
+                            <div class="modal_content">
+                                <button>X</button>
+                                <img src="img/조현준3.jpg" />
+                                <div class="weblink">
+                                    <p>
+                                        블라블라 얼굴 인식 설명
+                                    </p>
+                                    <a href="https://gentle-ravine-24356.herokuapp.com/" target="_blank">사이트
+                                        바로가기</a>
+                                    <p>깃허브에서 코드를 확인하실 수 있습니다.</p>
+                                    <a href="https://github.com/jokerKwu/KFCC_Chatbot" target="_blank">깃허브 바로가기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_overlay"></div>
+                </div>
+
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#portfolio" id="sicuanCastle">
+                        <span class="caption">
+                            <span class="caption-content">
+                                <h2>THREE</h2>
+                                <h5 class="mb-0">
+                                    사천성 프로젝트
+                                </h5>
+                            </span>
+                        </span>
+                        <img class="img-fluid" src="img/사천성.jpg" alt>
+                    </a>
+                </div>
+
+                <!-- 프로젝트 모달창 -->
+                <div class="modalContainer hidden">
+                    <div class="modal_wrap">
+                        <div class="modal_body">
+                            <div class="modal_content">
+                                <button>X</button>
+                                <img src="img/조현준3.jpg" />
+                                <div class="weblink">
+                                    <p>
+                                        블라블라 사천성 설명
+                                    </p>
+                                    <a href="https://gentle-ravine-24356.herokuapp.com/" target="_blank">사이트
+                                        바로가기</a>
+                                    <p>깃허브에서 코드를 확인하실 수 있습니다.</p>
+                                    <a href="https://github.com/jokerKwu/KFCC_Chatbot" target="_blank">깃허브 바로가기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_overlay"></div>
+                </div>
+
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#portfolio" id="webBoard">
+                        <span class="caption">
+                            <span class="caption-content">
+                                <h2>FOUR</h2>
+                                <h5 class="mb-0">
+                                    게시판 프로젝트
+                                </h5>
+                            </span>
+                        </span>
+                        <img class="img-fluid" src="img/웹게시판.JPG" alt>
+                    </a>
+                </div>
+
+                <!-- 프로젝트 모달창 -->
+                <div class="modalContainer hidden">
+                    <div class="modal_wrap">
+                        <div class="modal_body">
+                            <div class="modal_content">
+                                <button>X</button>
+                                <img src="img/조현준3.jpg" />
+                                <div class="weblink">
+                                    <p>
+                                        블라블라 게시판 설명
+                                    </p>
+                                    <a href="https://gentle-ravine-24356.herokuapp.com/" target="_blank">사이트
+                                        바로가기</a>
+                                    <p>깃허브에서 코드를 확인하실 수 있습니다.</p>
+                                    <a href="https://github.com/jokerKwu/KFCC_Chatbot" target="_blank">깃허브 바로가기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_overlay"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer section" id="contact">
         <div class="center">
             <ul class="list-inline">
                 <li class="list-inline-item">
-                    <a href="https://blog.naver.com/pkjhj485"
-                        class="social-link mr-3 rounded-circle fix-font-black "><img src="img/naver.png"></a>
+                    <a href="https://blog.naver.com/pkjhj485" class="social-link mr-3 rounded-circle fix-font-black "
+                        target="_blank"><img src="img/naver.png"></a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="https://jokerkwu.tistory.com/" class="social-link mr-3 rounded-circle fix-font-black"><img
-                            src="img/tistory.png"></a>
+                    <a href="https://jokerkwu.tistory.com/" class="social-link mr-3 rounded-circle fix-font-black"
+                        target="_blank"><img src="img/tistory.png"></a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="https://github.com/jokerKwu/" class="social-link mr-3 rounded-circle fix-font-black"><img
-                            src="img/git.png"></a>
+                    <a href="https://github.com/jokerKwu/" class="social-link mr-3 rounded-circle fix-font-black"
+                        target="_blank"><img src="img/git.png"></a>
                 </li>
             </ul>
         </div>
