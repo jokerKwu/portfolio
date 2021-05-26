@@ -65,8 +65,7 @@ pre {
 **/
 header {
   position: relative;
-  height: 800px;
-  min-height: 500px;
+  height: auto;
   width: 100%;
   background: #161415 url(./img/header-background.jpg) no-repeat top center;
   background-size: cover !important;
