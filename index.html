@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +9,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <title>쭈니 포트폴리오</title>
 </head>
-
 <body>
     <header class="section current" id="home">
         <nav id="nav-wrap" class style="display:block;">
@@ -75,7 +73,6 @@
             </div>
         </div>
     </section>
-
     <section class="section" id="skills">
         <div class="skills">
             <h1> Skills.</h1>
@@ -185,7 +182,7 @@
                     </a>
                 </div>
                 <!-- 프로젝트 모달창 -->
-                <div class="modalContainer hidden">
+                <div class="modalContainer chatbot_modal hidden">
                     <div class="modal_wrap">
                         <div class="modal_body">
                             <div class="modal_content">
@@ -230,7 +227,7 @@
                         </div>
                     </div>
                     <div class="modal_overlay chatBot_modal_overlay"></div>
-                </div>
+                </div>                
                 <!-- 얼굴인식 프로젝트 -->
                 <div class="col-lg-6">
                     <a class="portfolio-item" href="#portfolio" id="faceRecognition">
@@ -245,28 +242,50 @@
                         <img class="img-fluid" src="img/얼굴인식.jpg" alt>
                     </a>
                 </div>
-
                 <!-- 프로젝트 모달창 -->
-                <div class="modalContainer hidden">
+               <div class="modalContainer faceRecognition_modal hidden">
                     <div class="modal_wrap">
                         <div class="modal_body">
                             <div class="modal_content">
                                 <button>X</button>
-                                <img src="img/조현준3.jpg" />
-                                <div class="weblink">
-                                    <p>
-                                        블라블라 얼굴 인식 설명
+                                <div class="modal_title center">
+                                    <h3 class="title text-secondary text-uppercase mb-0">
+                                        얼굴인식
+                                    </h3>
+                                </div>
+                                <div class="center">
+                                <img src="img/face.JPG" />
+                                </div>
+                                <div class="center">
+                                <ul class="subject">
+                                    <li class="subject-sharp">
+                                        설명
+                                    </li>
+                                    <p class="paragraph">
+                                        
                                     </p>
-                                    <a href="https://gentle-ravine-24356.herokuapp.com/" target="_blank">사이트
-                                        바로가기</a>
+                                    <li class="subject-sharp">
+                                        역할
+                                    </li>
+                                    <p class="paragraph">
+                                    
+                                    </p>
+                                    <li class="subject-sharp">
+                                        기술 스택
+                                    </li>
+                                    <span class="skill">C++</span>
+                                </ul>
+                                </div>
+                                <div class="weblink">
                                     <p>깃허브에서 코드를 확인하실 수 있습니다.</p>
                                     <a href="https://github.com/jokerKwu/KFCC_Chatbot" target="_blank">깃허브 바로가기</a>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
                     <div class="modal_overlay"></div>
-                </div>
+                </div>                	
 <!-- 사천성 프로젝트 -->
                 <div class="col-lg-6">
                     <a class="portfolio-item" href="#portfolio" id="sicuanCastle">
@@ -281,28 +300,52 @@
                         <img class="img-fluid" src="img/사천성.jpg" alt>
                     </a>
                 </div>
-
                 <!-- 프로젝트 모달창 -->
-                <div class="modalContainer hidden">
-                    <div class="modal_wrap">
-                        <div class="modal_body">
-                            <div class="modal_content">
-                                <button>X</button>
-                                <img src="img/조현준3.jpg" />
-                                <div class="weblink">
-                                    <p>
-                                        블라블라 사천성 설명
-                                    </p>
-                                    <a href="https://gentle-ravine-24356.herokuapp.com/" target="_blank">사이트
-                                        바로가기</a>
-                                    <p>깃허브에서 코드를 확인하실 수 있습니다.</p>
-                                    <a href="https://github.com/jokerKwu/KFCC_Chatbot" target="_blank">깃허브 바로가기</a>
-                                </div>
+            <div class="modalContainer sicuanCastle_modal hidden">
+                <div class="modal_wrap">
+                    <div class="modal_body">
+                        <div class="modal_content">
+                            <button>X</button>
+                            <div class="modal_title center">
+                                <h3 class="title text-secondary text-uppercase mb-0">
+                                    사천성 게임
+                                </h3>
                             </div>
+                            <div class="center">
+                                <img src="img/game.jpg" />
+                            </div>
+                            <div class="center">
+                                <ul class="subject">
+                                    <li class="subject-sharp">
+                                        설명
+                                    </li>
+                                    <p class="paragraph">
+            
+                                    </p>
+                                    <li class="subject-sharp">
+                                        역할
+                                    </li>
+                                    <p class="paragraph">
+            
+                                    </p>
+                                    <li class="subject-sharp">
+                                        기술 스택
+                                    </li>
+                                    <span class="skill">C#</span>
+                                    <span class="skill">MYSQL</span>
+                                    <span class="skill">Azure</span>
+                                </ul>
+                            </div>
+                            <div class="weblink">
+                                <p>깃허브에서 코드를 확인하실 수 있습니다.</p>
+                                <a href="https://github.com/jokerKwu/KFCC_Chatbot" target="_blank">깃허브 바로가기</a>
+                            </div>
+            
                         </div>
                     </div>
-                    <div class="modal_overlay"></div>
                 </div>
+                <div class="modal_overlay"></div>
+            </div>
 <!-- 웹 게시판 프로젝트 -->
                 <div class="col-lg-6">
                     <a class="portfolio-item" href="#portfolio" id="webBoard">
@@ -317,9 +360,8 @@
                         <img class="img-fluid" src="img/웹게시판.JPG" alt>
                     </a>
                 </div>
-
                 <!-- 프로젝트 모달창 -->
-                <div class="modalContainer hidden">
+                <div class="modalContainer webBoard_modal hidden">
                     <div class="modal_wrap">
                         <div class="modal_body">
                             <div class="modal_content">
@@ -339,11 +381,9 @@
                     </div>
                     <div class="modal_overlay"></div>
                 </div>
-
             </div>
         </div>
     </section>
-
     <footer class="footer section" id="contact">
         <div class="center">
             <ul class="list-inline">
@@ -366,5 +406,4 @@
     </div>
     <script src="index.js"></script>
 </body>
-
 </html>

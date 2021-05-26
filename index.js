@@ -6,32 +6,84 @@ jQuery(document).ready(function ($) {
     const openClickGame = document.getElementById("sicuanCastle");
     const openClickBoard = document.getElementById("webBoard");
 
-    const modal = document.querySelector(".modalContainer");
-    const overlay = modal.querySelector(".modal_overlay");
-    const closeBtn = modal.querySelector("button");
+   // const modal = document.querySelector(".modalContainer");
+    const chatbotModal = document.querySelector(".chatbot_modal");
+    const faceRecognitionModal = document.querySelector(".faceRecognition_modal");
+    const sicuanCastleModal = document.querySelector(".sicuanCastle_modal");
+    const webBoardModal = document.querySelector(".webBoard_modal");
+    
 
-    const openModal = () => {
-        modal.classList.remove("hidden");
+
+    const overlay01 = chatbotModal.querySelector(".modal_overlay");
+    const overlay02 = faceRecognitionModal.querySelector(".modal_overlay");
+    const overlay03 = sicuanCastleModal.querySelector(".modal_overlay");
+    const overlay04 = webBoardModal.querySelector(".modal_overlay");
+
+
+    const closeBtn01 = chatbotModal.querySelector("button");
+    const closeBtn02 = faceRecognitionModal.querySelector("button");
+    const closeBtn03 = sicuanCastleModal.querySelector("button");
+    const closeBtn04 = webBoardModal.querySelector("button");
+
+
+
+
+    const openModal01 = () => {
+        chatbotModal.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+    };
+        const openModal02 = () => {
+        faceRecognitionModal.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+    };
+        const openModal03 = () => {
+        sicuanCastleModal.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+    };
+        const openModal04 = () => {
+        webBoardModal.classList.remove("hidden");
         document.body.style.overflow = "hidden";
     };
 
+
+
     const closeModal = () => {
-        modal.classList.add("hidden");
+        chatbotModal.classList.add("hidden");
+        faceRecognitionModal.classList.add("hidden");
+        sicuanCastleModal.classList.add("hidden");
+        webBoardModal.classList.add("hidden");
+        
         document.body.style.overflow = "visible";
     };
+
+
+
+
     $(document).keyup(function (e) {
         if (e.keyCode == 27) {
-            modal.classList.add("hidden");
+        chatbotModal.classList.add("hidden");
+        faceRecognitionModal.classList.add("hidden");
+        sicuanCastleModal.classList.add("hidden");
+        webBoardModal.classList.add("hidden");
             document.body.style.overflow = "visible";
         }
     });
 
-    overlay.addEventListener("click", closeModal); 
-    closeBtn.addEventListener("click", closeModal);
-    openClickChatBot.addEventListener("click", openModal);
-    openClickFace.addEventListener("click", openModal);
-    openClickGame.addEventListener("click", openModal);
-    openClickBoard.addEventListener("click", openModal);
+    overlay01.addEventListener("click", closeModal); 
+    closeBtn01.addEventListener("click", closeModal);
+    
+    overlay02.addEventListener("click", closeModal); 
+    closeBtn02.addEventListener("click", closeModal);
+    
+    overlay03.addEventListener("click", closeModal); 
+    closeBtn03.addEventListener("click", closeModal);
+    
+    overlay04.addEventListener("click", closeModal); 
+    closeBtn04.addEventListener("click", closeModal);
+    openClickChatBot.addEventListener("click", openModal01);
+    openClickFace.addEventListener("click", openModal02);
+    openClickGame.addEventListener("click", openModal03);
+    openClickBoard.addEventListener("click", openModal04);
     
     // Smooth Scrolling
     
