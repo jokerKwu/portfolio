@@ -113,6 +113,8 @@ jQuery(document).ready(function ($) {
 		offset: '0%'
     })
 
+
+
    $('header').css({ 'height': $(window).height() });
    $(window).on('resize', function() {
 
